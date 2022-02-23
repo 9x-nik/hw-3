@@ -5,7 +5,7 @@ class PlacesController < ApplicationController
     end
 
     def show
-        @company = Places.find(params["id"])
+        @places = Places.find(params["id"])
     end
 
     def new
