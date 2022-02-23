@@ -1,0 +1,17 @@
+<h1>New Travel Entry</h1>
+<%= form_with model: @company do |form| %>
+  <p>
+    <%= form.label "title" %>
+    <%= form.text_field "title" %>
+  </p>
+  <p>
+    <%= form.label "description" %>
+    <%= form.text_field "description" %>
+  </p>
+<p>
+    <%= form.label "posted_on" %>
+    <%= form.text_field "posted_on" %>
+  </p>
+  <%= form.submit %>
+  <p><a href="/places">Back to Places</a></p>
+<% end %>
